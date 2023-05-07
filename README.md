@@ -115,3 +115,27 @@ Now you can disconnect your initial session and the Jupyter Notebook server will
 If you want to close the screen session, reattach again the session with ```screen -r <SCREEN-NAME>```, stop the Jupyter Notebook server and type ```exit```. This wil take you again to the initial session. 
 
 ## Termius app
+
+## Termius app
+
+Termius is a cross-platform SSH client application that allows you to securely connect to and manage remote servers or computers. It provides a graphical user interface for managing SSH connections, allowing you to easily create and save connections. 
+
+
+Download and create an account to continue this tutorial. This link has a quick start for Terminus app: https://support.termius.com/hc/en-us/articles/4578043155737-Quick-Start.
+
+#### *Create a new host*
+
+Once Termius has been installed and you're logged, start by creating a new host:
+
+
+
+#### *Select an existing host*
+
+Double click on an existing host. If you saved the user and password when creating the host, it'll connect you to the remote server automatically:
+
+
+Now you can start a session on the remote server with just a double click.
+
+#### *Port forwarding* 
+
+To this part, we assume you have done the previous section (Screen command), so now we are going to create and save a **Port Forwarding**.
