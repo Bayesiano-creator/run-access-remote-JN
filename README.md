@@ -149,4 +149,4 @@ Second step consists in selecting an existing host. Select the host where the Ju
 
 ![remote](https://user-images.githubusercontent.com/77857908/236706368-50b3a7a3-771b-44a4-ae21-8415e363761f.png)
 
-Once the port forwarding has been created and saved, you can double click on it to turn it On/Off. If it's on, visit http://localhost: ```<LOCAL-JN-PORT>``` and you'll be able to use the Jupyter Notebook server, as long as it still be running in the remote server.  
+Once the port forwarding has been created and saved, you can double click on it to turn it On/Off. If it's on, visit localhost:```<LOCAL-JN-PORT>``` on your local machine and you'll be able to use the Jupyter Notebook server, as long as it still be running in the remote server.  
