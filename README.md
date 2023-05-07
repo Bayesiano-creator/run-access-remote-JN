@@ -141,7 +141,7 @@ To this part, we assume you have done the previous section (Screen command), so 
 
 Go to the Port Forwarding sheet and select new forwarding. The procedure consist of three steps: select the local port and binding address, select the intermediate host and select the destination host.
 
-In the first step you type ```<LOCAL-JN-PORT>``` on local port number and localhost on Bind address:
+In the first step type ```<LOCAL-JN-PORT>``` on local port number and localhost on Bind address:
 
 ![local](https://user-images.githubusercontent.com/77857908/236706271-194195e1-2040-4e9b-9d17-4a06b6cb1486.png)
 
