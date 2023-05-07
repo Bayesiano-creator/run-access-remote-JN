@@ -60,7 +60,41 @@ This procedure has two major disadvantages:
 
 The **screen** command solves the first disadvantage, and the **Termius** app proposes an alternative for the second.
 
+## Screen command
 
+Screen is a tool that allows you to manage multiple virtual terminals within a single terminal window. You can create as many virtual terminals or windows as you need using Screen. Any processes running in a Screen session will keep running even if you switch to a different window or get disconnected, ensuring that you don't lose any progress or data. Here you can find a basic tutorial: https://linuxize.com/post/how-to-use-linux-screen/.
 
+The Jupyter Notebook servers can be executed in Screen sessions. If your SSH session to the remote server is terminated, **the Jupyter Notebook will still be running**. To achieve this, start a session on the remote server using ssh:
 
+```
+[local_machine]$ ssh <USER>@<IP> -p <PORT>
+```
 
+and enter your password. Create a Screen session (use a manual session name ```<SESSION-NAME>```) with the command:
+
+```
+[remote_server]$ screen -dmS <SESSION-NAME>
+```
+
+The option -dmS allows you to create a new session named ```<SESSION-NAME>``` but stay in your local window. You can now use ```screen -ls``` to list all screen sessions and use ```screen -r <SCREEN-NAME>``` to acess (reattach) the screen session. It has to look like this:
+
+```
+[remote_server]$ screen -dmS <SESSION-NAME>
+[remote_server]$ screen -ls
+There are screens on:
+        <SCREEN-ID>.<SCREEN-NAME> (Detached)
+[remote_server]$ screen -r <SCREEN-NAME>
+```
+
+Once you've executed the above three commands you'll be inside the```<SESSION-NAME>``` session and you'll see a new window, without the above commands. You can verify that you're inside that session by running again ```screen -ls```. Now the screen will be Attached instead of Detached. Next, run a Jupyter Notebook server:
+
+```
+[remote_server]$ screen -ls
+There are screens on:
+        <SCREEN-ID>.<SCREEN-NAME> (Attached)
+[remote_server]$ jupyter notebook --no-browser --port <REMOTE-JN-PORT>
+[I 08:58:24.417 NotebookApp] Serving notebooks from local directory: /Users/user
+[I 08:58:24.417 NotebookApp] 0 active kernels
+[I 08:58:24.417 NotebookApp] The Jupyter Notebook is running at: http://localhost:<REMOTE-JN-PORT>/
+[I 08:58:24.417 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+```
