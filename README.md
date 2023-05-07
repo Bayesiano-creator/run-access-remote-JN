@@ -76,7 +76,7 @@ and enter your password. Create a Screen session (use a manual session name ```<
 [remote_server]$ screen -dmS <SESSION-NAME>
 ```
 
-The option -dmS allows you to create a new session named ```<SESSION-NAME>``` but staying in your current session. You can now use ```screen -ls``` to list all screen sessions and use ```screen -r <SCREEN-NAME>``` to acess (reattach) the screen session. It has to look like this:
+The option -dmS allows you to create a new session named ```<SESSION-NAME>``` but staying in your current session. You can now use ```screen -ls``` to list all screen sessions. Use ```screen -r <SCREEN-NAME>``` to acess (reattach) the screen session you've just created. It has to look like this:
 
 ```
 [remote_server]$ screen -dmS <SESSION-NAME>
