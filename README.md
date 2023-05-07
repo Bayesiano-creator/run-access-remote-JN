@@ -29,7 +29,7 @@ Once the command is executed, it will ask to enter the password:
 <USER>@<IP>'s password: <PWD>
 ```
 
-Once you are connected to the remote server, you can run a Jupyter Notebook server as usual using the command:
+Once you are connected to the remote server, you can **run a Jupyter Notebook server** as usual using the command:
 
 ```
 [remote_user@remote_host]$ jupyter notebook
