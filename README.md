@@ -98,3 +98,20 @@ There are screens on:
 [I 08:58:24.417 NotebookApp] The Jupyter Notebook is running at: http://localhost:<REMOTE-JN-PORT>/
 [I 08:58:24.417 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
 ```
+
+
+then press ```Ctrl+a``` ```d``` to detach the current session and you'll return to the initial session. It should look like this:
+
+```
+[remote_server]$ screen -dmS <SESSION-NAME>
+[remote_server]$ screen -ls
+There are screens on:
+        <SCREEN-ID>.<SCREEN-NAME> (Detached)
+[remote_server]$ screen -r <SCREEN-NAME>
+[remote_server]$ 
+```
+Now you can disconnect your initial session and the Jupyter Notebook server will still be running. 
+
+If you want to close the screen session, reattach again the session with ```screen -r <SCREEN-NAME>```, stop the Jupyter Notebook server and type ```exit```. This wil take you again to the initial session. 
+
+## Termius app
