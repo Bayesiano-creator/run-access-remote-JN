@@ -125,7 +125,7 @@ Download and create an account to continue this tutorial. This link has a quick 
 
 Once Termius has been installed and you're logged, start by creating a new host:
 
-
+![fillHost](https://user-images.githubusercontent.com/77857908/236705527-985fbae5-4545-429d-9b0e-faba4b3dff31.png)
 
 ### *Select an existing host*
 
