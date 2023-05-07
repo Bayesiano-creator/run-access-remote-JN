@@ -137,4 +137,16 @@ Now you can start a session on the remote server with just a double click.
 
 ### *Port forwarding* 
 
-To this part, we assume you have done the previous section (Screen command), so now we are going to create and save a **Port Forwarding**.
+To this part, we assume you have done the previous section (Screen command), so now we are going to create and save a **Port Forwarding** in order to open locally a Jupyter Notebook server that is running on a remote server.
+
+Go to the Port Forwarding sheet and select new forwarding. The procedure consist of three steps: select the local port and binding address, select the intermediate host and select the destination host.
+
+In the first step you type ```<LOCAL-JN-PORT>``` on local port number and localhost on Bind address:
+
+![local](https://user-images.githubusercontent.com/77857908/236706271-194195e1-2040-4e9b-9d17-4a06b6cb1486.png)
+
+Second step consists in selecting an existing host. Select the host where the Jupyter Notebook server is running. For the final step, type localhost on Destination address and ```<REMOTE-JN-PORT>``` on Destination port number:
+
+![remote](https://user-images.githubusercontent.com/77857908/236706368-50b3a7a3-771b-44a4-ae21-8415e363761f.png)
+
+
