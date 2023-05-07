@@ -86,7 +86,7 @@ There are screens on:
 [remote_server]$ screen -r <SCREEN-NAME>
 ```
 
-Once you've executed the above three commands you'll be inside the```<SESSION-NAME>``` session and you'll see a new window, without the above commands. You can verify that you're inside that session by running again ```screen -ls```. Now the screen will be Attached instead of Detached. Next, run a Jupyter Notebook server:
+Once you've executed the above three commands you'll be inside the```<SESSION-NAME>``` session and you'll see a new window, without the above commands. You can verify that you're inside that session by running again ```screen -ls```. Now the screen will be Attached instead of Detached. Next, start a Jupyter Notebook server:
 
 ```
 [remote_server]$ screen -ls
