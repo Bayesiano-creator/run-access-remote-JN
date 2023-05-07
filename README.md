@@ -131,6 +131,7 @@ Once Termius has been installed and you're logged, start by creating a new host:
 
 Double click on an existing host. If you saved the user and password when creating the host, it'll connect you to the remote server automatically:
 
+![opening](https://user-images.githubusercontent.com/77857908/236705582-59a5366c-7efe-40e8-9a08-13f3508ceb41.png)
 
 Now you can start a session on the remote server with just a double click.
 
